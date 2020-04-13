@@ -27,19 +27,6 @@ F 5 "1904-1010-1-ND" H 1750 2450 50  0001 C CNN "DigiKeyPartNumber"
 	1    0    0    -1  
 $EndComp
 $Comp
-L proj-components:TCA9509DGKR U?
-U 1 1 5E950A6B
-P 3250 1350
-F 0 "U?" H 4450 1843 60  0000 C CNN
-F 1 "TCA9509DGKR" H 4450 1737 60  0000 C CNN
-F 2 "DGK8" H 4450 1590 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tca9509.pdf" H 4450 1631 60  0000 C CNN
-F 4 "https://www.digikey.com/product-detail/en/texas-instruments/TCA9509DGKR/296-30283-1-ND/3060760" H 3250 1350 50  0001 C CNN "DigiKey"
-F 5 "296-30283-1-ND" H 3250 1350 50  0001 C CNN "DigiKeyPartNumber"
-	1    3250 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5E951891
 P 1750 3850
@@ -53,12 +40,12 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E955F09
-P 3100 1650
-F 0 "#PWR?" H 3100 1400 50  0001 C CNN
-F 1 "GND" H 3105 1477 50  0000 C CNN
-F 2 "" H 3100 1650 50  0001 C CNN
-F 3 "" H 3100 1650 50  0001 C CNN
-	1    3100 1650
+P 2950 1650
+F 0 "#PWR?" H 2950 1400 50  0001 C CNN
+F 1 "GND" H 2955 1477 50  0000 C CNN
+F 2 "" H 2950 1650 50  0001 C CNN
+F 3 "" H 2950 1650 50  0001 C CNN
+	1    2950 1650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -127,22 +114,17 @@ F 3 "https://media.digikey.com/pdf/Data%20Sheets/Sensirion%20PDFs/Sensirion_Mass
 	1    6550 2150
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3100 1650 3250 1650
-Wire Wire Line
-	3250 1350 3100 1350
 $Comp
 L Device:C C?
 U 1 1 5E96635E
-P 3100 1500
-F 0 "C?" H 3215 1546 50  0000 L CNN
-F 1 "0.1uF" H 3215 1455 50  0000 L CNN
-F 2 "" H 3138 1350 50  0001 C CNN
-F 3 "~" H 3100 1500 50  0001 C CNN
-	1    3100 1500
+P 2950 1500
+F 0 "C?" H 2700 1500 50  0000 L CNN
+F 1 "0.1uF" H 2700 1400 50  0000 L CNN
+F 2 "" H 2988 1350 50  0001 C CNN
+F 3 "~" H 2950 1500 50  0001 C CNN
+	1    2950 1500
 	1    0    0    -1  
 $EndComp
-Connection ~ 3100 1650
 $Comp
 L Device:C C?
 U 1 1 5E966B53
@@ -167,15 +149,9 @@ F 3 "" H 5750 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5750 1950 5750 1350
-Wire Wire Line
-	5750 1350 5650 1350
 Connection ~ 5750 1950
 Wire Wire Line
 	6550 1950 6550 1450
-Wire Wire Line
-	6550 1450 5650 1450
-Wire Wire Line
-	5650 1550 6750 1550
 Wire Wire Line
 	6750 1550 6750 1950
 $Comp
@@ -216,16 +192,56 @@ $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E97487C
-P 3100 1350
-F 0 "#PWR?" H 3100 1200 50  0001 C CNN
-F 1 "+3.3V" H 3115 1523 50  0000 C CNN
-F 2 "" H 3100 1350 50  0001 C CNN
-F 3 "" H 3100 1350 50  0001 C CNN
-	1    3100 1350
+P 2950 1350
+F 0 "#PWR?" H 2950 1200 50  0001 C CNN
+F 1 "+3.3V" H 2965 1523 50  0000 C CNN
+F 2 "" H 2950 1350 50  0001 C CNN
+F 3 "" H 2950 1350 50  0001 C CNN
+	1    2950 1350
 	1    0    0    -1  
 $EndComp
-Connection ~ 3100 1350
+Connection ~ 2950 1350
 Wire Wire Line
 	1650 850  1750 850 
 Connection ~ 1750 850 
+Text Label 1150 2450 2    50   ~ 0
+i2c_data_sensor
+Text Label 1150 2550 2    50   ~ 0
+i2c_clk_sensor
+Text Label 3150 2250 2    50   ~ 0
+i2c_data_sensor
+Text Label 3100 2150 2    50   ~ 0
+i2c_clk_sensor
+Wire Wire Line
+	5750 1350 5650 1350
+Wire Wire Line
+	6550 1450 5650 1450
+Wire Wire Line
+	5650 1550 6750 1550
+Wire Wire Line
+	3250 1350 2950 1350
+$Comp
+L proj-components:TCA9509DGKR U?
+U 1 1 5E950A6B
+P 3250 1350
+F 0 "U?" H 4450 1843 60  0000 C CNN
+F 1 "TCA9509DGKR" H 4450 1737 60  0000 C CNN
+F 2 "DGK8" H 4450 1590 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tca9509.pdf" H 4450 1631 60  0000 C CNN
+F 4 "https://www.digikey.com/product-detail/en/texas-instruments/TCA9509DGKR/296-30283-1-ND/3060760" H 3250 1350 50  0001 C CNN "DigiKey"
+F 5 "296-30283-1-ND" H 3250 1350 50  0001 C CNN "DigiKeyPartNumber"
+	1    3250 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1450 3250 1450
+Wire Wire Line
+	3150 2250 3150 1550
+Wire Wire Line
+	3150 1550 3250 1550
+Wire Wire Line
+	3100 1450 3100 2150
+Wire Wire Line
+	2950 1650 3250 1650
+Connection ~ 2950 1650
 $EndSCHEMATC
