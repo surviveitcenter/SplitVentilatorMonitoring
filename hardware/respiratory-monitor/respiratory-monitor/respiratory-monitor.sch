@@ -21,6 +21,8 @@ F 0 "U?" H 1300 3800 50  0000 C CNN
 F 1 "ESP32-WROOM-32" H 2200 3800 50  0000 C CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 1750 950 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 1450 2500 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/espressif-systems/ESP32-WROOM-32/1904-1010-1-ND/8544305" H 1750 2450 50  0001 C CNN "DigiKey"
+F 5 "1904-1010-1-ND" H 1750 2450 50  0001 C CNN "DigiKeyPartNumber"
 	1    1750 2450
 	1    0    0    -1  
 $EndComp
@@ -28,10 +30,12 @@ $Comp
 L proj-components:TCA9509DGKR U?
 U 1 1 5E950A6B
 P 3250 1350
-F 0 "U?" H 4450 1737 60  0000 C CNN
-F 1 "TCA9509DGKR" H 4450 1631 60  0000 C CNN
+F 0 "U?" H 4450 1843 60  0000 C CNN
+F 1 "TCA9509DGKR" H 4450 1737 60  0000 C CNN
 F 2 "DGK8" H 4450 1590 60  0001 C CNN
-F 3 "" H 3250 1350 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tca9509.pdf" H 4450 1631 60  0000 C CNN
+F 4 "https://www.digikey.com/product-detail/en/texas-instruments/TCA9509DGKR/296-30283-1-ND/3060760" H 3250 1350 50  0001 C CNN "DigiKey"
+F 5 "296-30283-1-ND" H 3250 1350 50  0001 C CNN "DigiKeyPartNumber"
 	1    3250 1350
 	1    0    0    -1  
 $EndComp
