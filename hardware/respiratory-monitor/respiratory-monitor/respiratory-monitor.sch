@@ -244,4 +244,18 @@ Wire Wire Line
 Wire Wire Line
 	2950 1650 3250 1650
 Connection ~ 2950 1650
+$Comp
+L proj-components:5525DSO-SB005GS U?
+U 1 1 5E97BD83
+P 3400 3500
+F 0 "U?" H 4500 3887 60  0000 C CNN
+F 1 "5525DSO-SB005GS" H 4500 3781 60  0000 C CNN
+F 2 "SO14_MS5525DSO" H 4500 3740 60  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5525DSO&DocType=DS&DocLang=English" H 4500 3781 60  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/te-connectivity-measurement-specialties/5525DSO-SB005GS/223-1706-5-ND/5824907" H 3400 3500 50  0001 C CNN "DigiKey"
+F 5 "223-1706-5-ND" H 3400 3500 50  0001 C CNN "DigiKeyPartNumber"
+F 6 "TE Connectivity Measurement Specialties" H 3400 3500 50  0001 C CNN "Manufacturer"
+	1    3400 3500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
